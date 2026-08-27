@@ -1,0 +1,24 @@
+{
+  "camera": {
+    "image_name": "synthetic_skydio.jpg",
+    "latitude": 37.0,
+    "longitude": -77.0,
+    "relative_altitude_m": 30.0,
+    "absolute_altitude_m": 100.0,
+    "pitch_deg": -90.0,
+    "roll_deg": 0.0,
+    "yaw_deg": 0.0,
+    "focal_length_mm": 8.8,
+    "focal_length_35mm": 24
+  },
+  "pole": {
+    "latitude": 37.0,
+    "longitude": -77.0,
+    "height_ft": 40.0
+  },
+  "dem": {
+    "elevation_m": 70.0,
+    "cell_size_deg": 0.001,
+    "size": 20
+  }
+}

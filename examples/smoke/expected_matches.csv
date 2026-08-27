@@ -1,0 +1,2 @@
+pole_oid,pole_lat,pole_lon,image_name,distance_m,match_source
+0,37.00000000,-77.00000000,synthetic_skydio.jpg,0.00,primary

@@ -1,0 +1,34 @@
+[defaults]
+# Required unless provided on the CLI.
+# data_path = "C:/path/to/poles.shp"
+
+# Optional project defaults.
+# vendor is now auto-detected per image from the EXIF:Make tag:
+#   DJI    -> dji
+#   Skydio -> skydio
+#   unknown / absent -> generic
+# This key is kept for backward compatibility but no longer affects parsing.
+# vendor = "skydio"
+img_field = "match_imgs"
+dist_field = "img_dists"
+height_field = "HEIGHT"
+default_pole_height_m = 15.0
+# output_path = "C:/path/to/output.shp"
+# matches_csv_path = "C:/path/to/output_matches.csv"
+# dem_path = "C:/path/to/dem.tif"
+# debug_kml = true
+# debug_output_path = "debug_poles.kml"
+
+[projection]
+max_range_m = 100.0
+nadir_threshold_deg = 85.0
+margin_px = 50.0
+
+[fallback]
+enabled = true
+max_camera_to_pole_m = 20.0
+max_snap_distance_m = 20.0
+min_overlap_images = 2
+singleton_confidence_cap = 0.45
+region_relaxation_m = 0.0
+weight_clip = 3.0

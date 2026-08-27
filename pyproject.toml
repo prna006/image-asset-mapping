@@ -1,0 +1,11 @@
+# Tool configuration only. The supported delivery is repository scripts run
+# from the repository root, not an installable Python package.
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
